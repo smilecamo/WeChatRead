@@ -1,144 +1,0 @@
-2019/07/02 09:49:41 [notice] 15056#11484: signal process started
-2019/07/02 09:56:18 [crit] 3772#4600: *1 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: resouce, request: "GET / HTTP/1.1", host: "localhost:8081"
-2019/07/02 09:56:18 [crit] 3772#4600: *2 CreateFile() "C:\Users\Yang\Desktopesouce/favicon.ico" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: resouce, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8081", referrer: "http://localhost:8081/"
-2019/07/02 09:57:57 [emerg] 15316#15920: "server" directive is not allowed here in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:94
-2019/07/02 09:58:00 [emerg] 1288#8908: "server" directive is not allowed here in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:94
-2019/07/02 09:58:02 [crit] 3772#4600: *4 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: resouce, request: "GET / HTTP/1.1", host: "localhost:8081"
-2019/07/02 09:58:03 [crit] 3772#4600: *5 CreateFile() "C:\Users\Yang\Desktopesouce/favicon.ico" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: resouce, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8081", referrer: "http://localhost:8081/"
-2019/07/02 09:59:53 [emerg] 4048#16888: unexpected "}" in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:122
-2019/07/02 09:59:54 [emerg] 12848#9004: unexpected "}" in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:122
-2019/07/02 09:59:56 [crit] 3772#4600: *7 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: resouce, request: "GET / HTTP/1.1", host: "localhost:8081"
-2019/07/02 09:59:57 [crit] 3772#4600: *8 CreateFile() "C:\Users\Yang\Desktopesouce/favicon.ico" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: resouce, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8081", referrer: "http://localhost:8081/"
-2019/07/02 10:00:00 [crit] 3772#4600: *9 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: resouce, request: "GET / HTTP/1.1", host: "localhost:8081"
-2019/07/02 10:00:00 [crit] 3772#4600: *10 CreateFile() "C:\Users\Yang\Desktopesouce/favicon.ico" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: resouce, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8081", referrer: "http://localhost:8081/"
-2019/07/02 10:01:10 [notice] 10680#14472: signal process started
-2019/07/02 10:01:28 [error] 12256#16888: *1 CreateFile() "C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
-2019/07/02 10:02:10 [notice] 9608#12296: signal process started
-2019/07/02 10:02:14 [crit] 16840#224: *1 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:03:56 [notice] 16324#17212: signal process started
-2019/07/02 10:03:56 [error] 16324#17212: CreateFile() "C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/logs/nginx.pid" failed (2: The system cannot find the file specified)
-2019/07/02 10:04:02 [crit] 16840#224: *4 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:05:03 [notice] 8048#7500: signal process started
-2019/07/02 10:05:09 [crit] 16840#224: *7 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:08:46 [notice] 8684#10564: signal process started
-2019/07/02 10:08:53 [crit] 16840#224: *10 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:09:04 [crit] 16840#224: *13 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:09:06 [notice] 14648#11824: signal process started
-2019/07/02 10:09:10 [crit] 16840#224: *14 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:09:11 [crit] 16840#224: *15 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:09:11 [crit] 16840#224: *16 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:09:12 [crit] 16840#224: *17 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:09:12 [crit] 16840#224: *18 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:09:12 [crit] 16840#224: *19 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:09:13 [crit] 16840#224: *20 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:09:44 [notice] 13704#5304: signal process started
-2019/07/02 10:09:48 [crit] 16840#224: *22 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:10:54 [crit] 16840#224: *25 GetFileAttributesEx() "C:\Users\Yang\Desktopesouce" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:17:24 [emerg] 4048#12256: CreateFile() "C:/nginx-1.17.1/conf/nginx.conf" failed (3: The system cannot find the path specified)
-2019/07/02 10:18:00 [emerg] 12036#17012: invalid number of arguments in "user" directive in C:/Users/Yang/Desktop/nginx-1.17.1/nginx-1.17.1/conf/nginx.conf:3
-2019/07/02 10:19:06 [emerg] 15244#11748: invalid number of arguments in "user" directive in C:/Users/Yang/Desktop/nginx-1.17.1/nginx-1.17.1/conf/nginx.conf:3
-2019/07/02 10:19:17 [emerg] 17264#15568: invalid number of arguments in "user" directive in C:/Users/Yang/Desktop/nginx-1.17.1/nginx-1.17.1/conf/nginx.conf:3
-2019/07/02 10:19:40 [warn] 15160#6756: "user" is not supported, ignored in C:/Users/Yang/Desktop/nginx-1.17.1/nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:24:46 [error] 15244#15200: *1 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:25:36 [error] 15244#15200: *1 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:27:00 [warn] 5544#17328: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:27:00 [notice] 5544#17328: signal process started
-2019/07/02 10:36:24 [warn] 6380#6636: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:36:24 [warn] 15700#13852: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:36:29 [error] 15700#6644: *1 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:37:03 [warn] 4076#12284: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:37:03 [notice] 4076#12284: signal process started
-2019/07/02 10:37:06 [warn] 16880#5456: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:37:06 [warn] 12684#12988: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:37:52 [warn] 9956#15640: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:37:52 [notice] 9956#15640: signal process started
-2019/07/02 10:37:55 [warn] 9016#8216: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:37:55 [warn] 16872#11640: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:38:30 [warn] 316#13020: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:38:30 [notice] 316#13020: signal process started
-2019/07/02 10:38:32 [warn] 15672#16948: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:38:32 [warn] 9004#14720: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:38:34 [error] 9004#10176: *1 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:40:20 [notice] 1108#4988: signal process started
-2019/07/02 10:40:20 [error] 1108#4988: CreateFile() "C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/logs/nginx.pid" failed (2: The system cannot find the file specified)
-2019/07/02 10:40:25 [error] 9004#10176: *4 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:40:28 [error] 9004#10176: *4 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:45:24 [warn] 5728#16616: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:45:24 [warn] 5400#5500: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:45:27 [error] 9004#10176: *7 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:47:26 [warn] 13912#15376: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:47:26 [warn] 15576#9228: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:47:28 [error] 9004#10176: *10 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:50:36 [warn] 2624#15224: "user" is not supported, ignored in C:/Users/Yang/Desktop/nginx-1.17.1/nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 10:59:20 [error] 9004#10176: *13 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:59:22 [error] 9004#10176: *13 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:59:22 [error] 9004#10176: *13 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:59:23 [error] 9004#10176: *13 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:59:23 [error] 9004#10176: *13 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:59:24 [error] 9004#10176: *13 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 10:59:24 [error] 9004#10176: *13 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 11:01:00 [error] 9004#10176: *16 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 11:04:15 [warn] 16872#17392: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 11:04:15 [warn] 7500#2748: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 11:04:18 [error] 9004#10176: *19 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 11:04:26 [warn] 10352#17304: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 11:04:26 [emerg] 10352#17304: bind() to 0.0.0.0:8080 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
-2019/07/02 11:04:28 [error] 9004#10176: *19 directory index of "E:/demo/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
-2019/07/02 11:04:34 [error] 9004#10176: *19 CreateFile() "E:/demo/resouce/80" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /80 HTTP/1.1", host: "localhost"
-2019/07/02 11:04:38 [error] 9004#10176: *19 CreateFile() "E:/demo/resouce/8080" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8080 HTTP/1.1", host: "localhost"
-2019/07/02 11:04:40 [error] 9004#10176: *19 CreateFile() "E:/demo/resouce/8080" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8080 HTTP/1.1", host: "localhost"
-2019/07/02 11:04:55 [error] 9004#10176: *19 CreateFile() "E:/demo/resouce/8080" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8080 HTTP/1.1", host: "localhost"
-2019/07/02 11:05:03 [error] 9004#10176: *19 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:05:09 [warn] 13436#12176: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 11:05:09 [warn] 5092#17260: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 11:05:10 [error] 9004#10176: *19 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:05:12 [error] 9004#10176: *19 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:05:13 [error] 9004#10176: *19 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:05:13 [error] 9004#10176: *19 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:05:14 [error] 9004#10176: *19 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:05:32 [error] 9004#10176: *19 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:06:56 [warn] 6600#13872: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 11:06:56 [warn] 5824#14300: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 11:06:58 [error] 9004#10176: *27 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:07:00 [error] 9004#10176: *27 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:08:47 [warn] 5544#13352: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 11:08:47 [warn] 15084#7740: "user" is not supported, ignored in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:2
-2019/07/02 11:08:50 [error] 9004#10176: *30 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:08:56 [error] 9004#10176: *30 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:09:44 [error] 9004#10176: *30 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:10:07 [error] 9004#10176: *30 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:10:08 [error] 9004#10176: *30 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:10:08 [error] 9004#10176: *30 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:10:09 [error] 9004#10176: *30 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:11:24 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:11:25 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:11:26 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:11:39 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:11:40 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:11:41 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:12:01 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:12:02 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:12:03 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:12:03 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:12:03 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:12:04 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:12:04 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:12:24 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:12:25 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:12:53 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:12:54 [error] 9004#10176: *35 CreateFile() "E:/demo/resouce/8081" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /8081 HTTP/1.1", host: "localhost"
-2019/07/02 11:18:00 [error] 4416#10412: *1 CreateFile() "C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/resouce/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8081", referrer: "http://localhost:8081/"
-2019/07/02 11:21:52 [notice] 16544#13348: signal process started
-2019/07/02 11:21:57 [error] 12316#16616: *1 directory index of "C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8081"
-2019/07/02 11:22:42 [notice] 7472#10844: signal process started
-2019/07/02 11:22:47 [error] 8884#464: *1 directory index of "C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8081"
-2019/07/02 11:22:54 [error] 8884#464: *1 directory index of "C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8081"
-2019/07/02 11:24:15 [error] 17096#13116: *1 directory index of "C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8081"
-2019/07/02 11:25:28 [error] 8028#14748: *1 directory index of "C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8081"
-2019/07/02 11:28:33 [error] 8028#14748: *4 directory index of "C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/resouce/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8081"
-2019/07/02 11:32:05 [error] 3240#5144: *1 "C:/resouce/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8081"
-2019/07/02 13:25:54 [emerg] 16160#18968: invalid number of arguments in "add_header" directive in C:\Users\Yang\Desktop\nginx-1.17.1\nginx-1.17.1/conf/nginx.conf:58
-2019/07/02 13:31:56 [notice] 17316#19408: signal process started
-2019/07/02 16:46:22 [notice] 5280#10564: signal process started
-2019/07/02 16:47:26 [notice] 14720#16580: signal process started
-2019/07/02 16:47:40 [notice] 12640#1444: signal process started

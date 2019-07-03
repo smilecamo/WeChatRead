@@ -11,5 +11,6 @@ module.exports = {
       .set('styles', resolve('src/assets/styles'))
       .set('components', resolve('src/components'))
       .set('views', resolve('src/views'))
+      .set('utils', resolve('src/utils'))
   }
 }
