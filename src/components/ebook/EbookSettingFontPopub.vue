@@ -6,7 +6,7 @@
       <div class="ebook-popub-title-icon" @click="hide">
         <span class="icon-down2"></span>
       </div>
-      <span class="ebook-popub-title-text">选择字体</span>
+      <span class="ebook-popub-title-text">{{$t('book.selectFont')}}</span>
     </div>
     <div class="ebook-popub-list-wrapper">
       <div class="ebook-popub-item" v-for="(item,key) in fontFamilyList " :key="key" @click="setFontFamily(item.font)">
