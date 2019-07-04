@@ -9,11 +9,11 @@
       <span class="ebook-popub-title-text">选择字体</span>
     </div>
     <div class="ebook-popub-list-wrapper">
-      <div class="ebook-popub-item" v-for="(item,key) in fontFamilyList " :key="key">
+      <div class="ebook-popub-item" v-for="(item,key) in fontFamilyList " :key="key" @click="setFontFamily(item.font)">
         <div class="ebook-popub-item-text" :class="{'selected':isSelected(item)}">
           {{item.font}}
         </div>
-        <div class="ebook-popub-item-check">
+        <div class="ebook-popub-item-check" v-show="isSelected(item)">
           <span class="icon-check"></span>
         </div>
       </div>
@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import { saveFontFamily } from 'utils/localStorage'
 import { ebookMixin } from 'utils/mixin'
 import { FONT_FAMILY } from 'utils/book'
 export default {
@@ -33,11 +34,26 @@ export default {
     }
   },
   methods: {
+    // 点击下箭头隐藏字体设置
     hide () {
       this.setFontFamilyVisible(false)
     },
+    // 选中状态下改变颜色
     isSelected (item) {
-      console.log(item)
+      return this.defaultFontFamily === item.font
+    },
+    // 切换显示选中的字体
+    setFontFamily (font) {
+      saveFontFamily(this.fileName, font)
+      if (font === 'Default') {
+        // 默认字体显示
+        this.currentBook.rendition.themes.font('Times New Roman')
+      } else {
+        // 切换字体
+        this.currentBook.rendition.themes.font(font)
+      }
+      // 切换显示选中的字体
+      this.setDefaultFontFamily(font)
     }
   }
 }
@@ -54,6 +70,7 @@ export default {
   background: #fff;
   box-shadow: 0 px2rem(-4) px2rem(6) rgba(0,0,0,.1);
   .ebook-popub-title {
+    position: relative;
     padding: px2rem(15);
     box-sizing: border-box;
     border-bottom: px2rem(1) solid #b8b9bb;
@@ -73,6 +90,26 @@ export default {
     }
   }
   .ebook-popub-list-wrapper {
+.ebook-popub-item{
+  display: flex;
+  padding: px2rem(15);
+.ebook-popub-item-text{
+  flex: 1;
+  font-size: px2rem(14);
+  text-align: left;
+  &.selected{
+    color: #346cd9;
+    font-weight: bold;
+  }
+}
+.ebook-popub-item-check{
+  flex: 1;
+  font-size: px2rem(14);
+  text-align: right;
+  color: #346cd9;
+  font-weight: 600;
+}
+}
   }
 }
 </style>

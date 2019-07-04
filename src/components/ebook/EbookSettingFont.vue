@@ -32,6 +32,7 @@
 </template>
 
 <script>
+import { saveFontSize } from 'utils/localStorage'
 import { FONT_SIZE_LIST } from 'utils/book'
 import { ebookMixin } from 'utils/mixin'
 export default {
@@ -42,9 +43,10 @@ export default {
     }
   },
   methods: {
-    setFontSize (key) {
-      this.setDefaultFontSize(key)
-      this.currentBook.rendition.themes.fontSize(key + 'px')
+    setFontSize (fontSize) {
+      saveFontSize(this.fileName, fontSize)
+      this.setDefaultFontSize(fontSize)
+      this.currentBook.rendition.themes.fontSize(fontSize + 'px')
     },
     // 字体选择
     showFontFamilyPopup () {

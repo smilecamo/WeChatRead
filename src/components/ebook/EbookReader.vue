@@ -6,14 +6,26 @@
 
 <script>
 import { ebookMixin } from 'utils/mixin'
+import { saveFontFamily, saveFontSize, getFontFamily, getFontSize } from 'utils/localStorage'
 import Epub from 'epubjs'
 global.ePub = Epub
 export default {
   mixins: [ebookMixin],
+  mounted () {
+    // this.$route.params.fileName 动态路由的名称
+    if (this.$route.params.fileName) {
+      const fileName = this.$route.params.fileName.split('|').join('/')
+      this.setFileName(fileName).then(() => {
+        this.initEpub()
+      })
+    } else {
+      console.log('查询不到')
+    }
+  },
   methods: {
     // 初始化图书
     initEpub () {
-      const url = 'http://192.168.18.51:8081/epub/' + this.fileName + '.epub'
+      const url = `${process.env.VUE_APP_RES_URL}/epub/${this.fileName}.epub`
       // 初始化图书
       this.book = new Epub(url)
       this.setCurrentBook(this.book)
@@ -25,7 +37,12 @@ export default {
         // method: 'default'
       })
       // 加载图书
-      this.rendition.display()
+      this.rendition.display().then(() => {
+        // 字体设置
+        this.initFontFamily()
+        // 字号设置
+        this.initFontSize()
+      })
       // 手指进入事件
       this.rendition.on('touchstart', event => {
         // 手指X轴坐标
@@ -49,12 +66,46 @@ export default {
         }
         // event.preventDefault()
         // event.stopPropagation()
+        // 字体设置,字体文件需要从网络上进行引入(url)
+        this.rendition.hooks.content.register(contents => {
+          Promise.all(
+            [
+              contents.addStylesheet(`${process.env.VUE_APP_RES_URL}/book/res/fonts/daysOne.css`),
+              contents.addStylesheet(`${process.env.VUE_APP_RES_URL}/book/res/fonts/cabin.css`),
+              contents.addStylesheet(`${process.env.VUE_APP_RES_URL}/book/res/fonts/montserrat.css`),
+              contents.addStylesheet(`${process.env.VUE_APP_RES_URL}/book/res/fonts/tangerine.css`)
+            ]
+          ).then(() => {
+
+          })
+        })
       })
+    },
+    // 字体设置
+    initFontFamily () {
+      let font = getFontFamily(this.fileName)
+      if (!font) {
+        saveFontFamily(this.fileName, this.defaultFontFamily)
+      } else {
+        this.rendition.themes.font(font)
+        this.setDefaultFontFamily(font)
+      }
+    },
+    // 字号设置
+    initFontSize () {
+      let fontSize = getFontSize(this.fileName)
+      if (!fontSize) {
+        saveFontSize(this.fileName, this.defaultFontSize)
+      } else {
+        this.currentBook.rendition.themes.fontSize(fontSize + 'px')
+        this.setDefaultFontSize(fontSize)
+      }
     },
     // 上一页
     pervPage () {
       if (this.rendition) {
         this.rendition.prev()
+        // 隐藏菜单和标题
         this.hideTitleAndMenu()
       }
     },
@@ -62,6 +113,7 @@ export default {
     nextPage () {
       if (this.rendition) {
         this.rendition.next()
+        // 隐藏菜单和标题
         this.hideTitleAndMenu()
       }
     },
@@ -69,27 +121,20 @@ export default {
     toggleTitleAndMenu () {
       if (this.menuVisible) {
         this.setSettingVisible(-1)
+        // 隐藏字体设置
+        this.setFontFamilyVisible(false)
       }
       this.setMenuVisible(!this.menuVisible)
     },
     // 只是隐藏
     hideTitleAndMenu () {
+      // 隐藏
       this.setMenuVisible(false)
       this.setSettingVisible(-1)
+      // 隐藏字体设置
+      this.setFontFamilyVisible(false)
     }
 
-  },
-  mounted () {
-    // this.$route.params.fileName 动态路由的名称
-
-    if (this.$route.params.fileName) {
-      const fileName = this.$route.params.fileName.split('|').join('/')
-      this.setFileName(fileName).then(() => {
-        this.initEpub()
-      })
-    } else {
-      console.log('查询不到')
-    }
   }
 }
 </script>
