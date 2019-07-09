@@ -67,7 +67,6 @@ export default {
     z-index: 101;
     width: 100%;
     height: px2rem(90);
-    background: white;
     box-shadow: 0 px2rem(-8) px2rem(8) rgba(0, 0, 0, .15);
     .setting-font-size {
       display: flex;
@@ -137,11 +136,6 @@ export default {
       @include center;
       .setting-font-family-text-wrapper{
         @include center;
-        .setting-font-family-text{
-        }
-      }
-      .setting-font-family-icon-wrapper{
-        .icon-forward{}
       }
     }
   }

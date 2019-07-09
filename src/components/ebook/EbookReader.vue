@@ -6,7 +6,7 @@
 
 <script>
 import { ebookMixin } from 'utils/mixin'
-import { saveFontFamily, saveFontSize, getFontFamily, getFontSize } from 'utils/localStorage'
+import { saveFontFamily, saveFontSize, getFontFamily, getFontSize, getTheme, saveTheme } from 'utils/localStorage'
 import Epub from 'epubjs'
 global.ePub = Epub
 export default {
@@ -38,10 +38,14 @@ export default {
       })
       // 加载图书
       this.rendition.display().then(() => {
+        // 主题设置
+        this.initTheme()
         // 字体设置
         this.initFontFamily()
         // 字号设置
         this.initFontSize()
+        // 全局样式
+        this.initGlobalStyle()
       })
       // 手指进入事件
       this.rendition.on('touchstart', event => {
@@ -81,8 +85,23 @@ export default {
         })
       })
     },
+    initTheme () {
+      // 获取本地缓存的主题
+      let defaultTheme = getTheme(this.fileName)
+      if (!defaultTheme) {
+        defaultTheme = this.themeList[0].name
+
+        saveTheme(this.fileName, defaultTheme)
+      }
+      this.setDefaultTheme(defaultTheme)
+      this.themeList.forEach(theme => {
+        this.rendition.themes.register(theme.name, theme.style)
+      })
+      this.rendition.themes.select(defaultTheme)
+    },
     // 字体设置
     initFontFamily () {
+      // 获取本地缓存的字体
       let font = getFontFamily(this.fileName)
       if (!font) {
         saveFontFamily(this.fileName, this.defaultFontFamily)
@@ -93,6 +112,7 @@ export default {
     },
     // 字号设置
     initFontSize () {
+      // 获取本地缓存的字号
       let fontSize = getFontSize(this.fileName)
       if (!fontSize) {
         saveFontSize(this.fileName, this.defaultFontSize)
